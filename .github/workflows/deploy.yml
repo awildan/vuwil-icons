@@ -29,9 +29,10 @@ jobs:
           node-version: "16.x"
 
       #👇 Add Storybook build and deploy to GitHub Pages as a step in the workflow
-      - uses: awildan/github-actions-storybook-to-github-pages@v1.0.3
+      - uses: awildan/vuwil-icons@v1.0.1
         with:
           install_command: npm install # default: npm ci
           build_command: npm build-storybook # default: npm run build-storybook
           path: storybook-static # default: dist/storybook
           checkout: false # default: true
+
