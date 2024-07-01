@@ -10,7 +10,7 @@
     "build-rollup": "rm -rf dist && rollup -c",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
+    "build-storybook": "build-storybook -o storybook-static",
     "storybook:build": "storybook build -o storybook-static",
     "deploy-storybook": "gh-pages -d storybook-static"
   },
@@ -46,3 +46,4 @@
     "vite": "^5.3.1"
   }
 }
+
