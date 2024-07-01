@@ -1,0 +1,46 @@
+{
+  "name": "vuwil-icons",
+  "version": "1.0.1",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build-rollup": "rm -rf dist && rollup -c",
+    "preview": "vite preview",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "storybook:build": "build-storybook -o build-storybook"
+  },
+  "peerDependencies": {
+    "vue": "^2.6.0 || ^3.0.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "vue": "^2.6.0 || ^3.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.7",
+    "@babel/preset-env": "^7.24.7",
+    "@chromatic-com/storybook": "^1.6.0",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^26.0.1",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@storybook/addon-essentials": "^8.1.11",
+    "@storybook/addon-interactions": "^8.1.11",
+    "@storybook/addon-links": "^8.1.11",
+    "@storybook/blocks": "^8.1.11",
+    "@storybook/test": "^8.1.11",
+    "@storybook/vue3": "^8.1.11",
+    "@storybook/vue3-vite": "^8.1.11",
+    "@vitejs/plugin-vue": "^5.0.5",
+    "rollup": "^4.18.0",
+    "rollup-plugin-vue": "^6.0.0",
+    "storybook": "^8.1.11",
+    "vite": "^5.3.1"
+  }
+}
+
