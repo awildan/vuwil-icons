@@ -11,5 +11,14 @@ const config = {
     name: "@storybook/vue3-vite",
     options: {},
   },
+  core: {
+    builder: '@storybook/builder-vite',
+  },
+  viteFinal: (config, { configType }) => {
+    if (configType === 'PRODUCTION') {
+      config.base = '/vuwil-icons/';
+    }
+    return config;
+  },
 };
 export default config;
