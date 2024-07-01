@@ -29,10 +29,11 @@ jobs:
           node-version: "16.x"
 
       #👇 Add Storybook build and deploy to GitHub Pages as a step in the workflow
-      - uses: awildan/vuwil-icons@v1.0.1
+      - uses: awildan/vuwil-icons
         with:
           install_command: npm install # default: npm ci
           build_command: npm build-storybook # default: npm run build-storybook
           path: storybook-static # default: dist/storybook
           checkout: false # default: true
+
 
