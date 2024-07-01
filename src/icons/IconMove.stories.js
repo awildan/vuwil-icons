@@ -22,7 +22,7 @@ const Template = (args) => ({
 
 export const Default = Template.bind({});
 Default.args = {
-    size: 40,
+    size: 36,
     color: '#A4A4A4',
 };
 
