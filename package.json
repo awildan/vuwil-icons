@@ -11,7 +11,8 @@
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "storybook:build": "build-storybook -o build-storybook"
+    "storybook:build": "storybook build -o storybook-static",
+    "deploy-storybook": "gh-pages -d storybook-static"
   },
   "peerDependencies": {
     "vue": "^2.6.0 || ^3.0.0"
@@ -37,6 +38,7 @@
     "@storybook/vue3": "^8.1.11",
     "@storybook/vue3-vite": "^8.1.11",
     "@vitejs/plugin-vue": "^5.0.5",
+    "gh-pages": "^6.1.1",
     "rollup": "^4.18.0",
     "rollup-plugin-vue": "^6.0.0",
     "storybook": "^8.1.11",
